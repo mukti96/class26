@@ -1,0 +1,198 @@
+
+.header-area img{
+	width: 50px;
+}
+.apply-area{
+    padding: 90px 0;
+}
+.apply ul{
+    list-style: none;
+    position: relative;
+}
+.apply ul::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 2px;
+    height: calc(100% - 20px);
+    background-color: red;
+}
+.apply ul li{
+    position: relative;
+}
+.apply ul li::after{
+    content: attr(data-value);
+    position: absolute;
+    top: 0;
+    left: -38px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    background-color: #f5f5f5;
+    font-size: 20px;
+
+}
+.apply ul li strong{
+    margin-left: 15px;
+}
+.apply ul li p{
+    margin-left: 15px;
+}
+.data{
+    list-style: none;
+}
+.data li{
+    margin-left: 15px;
+    margin-top: -15px;
+}
+
+
+
+/* service-area */
+.service-area{
+    padding: 190px 0;
+}
+.service-menu li button{
+    border: none;
+    background-color: transparent;
+}
+.service-menu li button span {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	box-shadow: 1px 1px 20px #00000045;
+	border-radius: 50%;
+	line-height: 60px;
+	color: #ddd;
+	font-size: 24px;
+}
+.service-menu li button h4 {
+	text-transform: capitalize;
+	color: #000;
+	margin-top: 10px;
+}
+.service-menu{
+    border-bottom: 2px solid rgb(101, 98, 98);
+    padding-bottom: 20px;
+}
+.service-menu li .active span{
+    color: red;
+}
+.service-menu li .active{
+    position: relative;
+}
+.service-menu li .active::after{
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+
+
+.testimonial-area{
+    padding-bottom: 100px;
+}
+.custom-indicators {
+	left: 65%;
+	width: 20%;
+	bottom: 45%;
+	transform: rotate(90deg);
+}
+.custom-indicators button {
+	width: 30px !important;
+	height: 31px !important;
+	border-radius: 50% !important;
+    border: 1px solid #000 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-indicators button .custom-dot{
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 1s;
+
+}
+.custom-indicators button.active .custom-dot{
+    background-color: red;
+
+}
+.custom-indicators button:hover .custom-dot{
+    background-color: red;
+
+}
+/* team-area */
+.team-area{
+    padding-bottom: 200px;
+}
+.team-item{
+
+}
+.team-img {
+	position: relative;
+    overflow: hidden;
+}
+.team-img img{}
+.team-img .team-social {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	right: 0;
+}
+.team-img .team-social ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.team-img .team-social ul li {
+	display: inline-block;
+	transform: translateY(55px);
+	visibility: hidden;
+	opacity: 0;
+    transition: .5s ease-in-out;
+}
+.team-img .team-social ul li:nth-child(1){
+    transition-delay: .3s;
+}
+.team-img .team-social ul li:nth-child(2){
+    transition-delay: .4s;
+}
+.team-img .team-social ul li:nth-child(3){
+    transition-delay: .5s;
+}
+.team-img .team-social ul li:nth-child(4){
+    transition-delay: .6s;
+}
+.team-img:hover .team-social ul li {
+	transform: translateY(0);
+	visibility: visible;
+	opacity: 1;
+}
+.team-img .team-social ul li a {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background: red;
+	color: #000;
+	border-radius: 50%;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+
+
+
+
+
+
+
